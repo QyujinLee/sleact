@@ -1,12 +1,11 @@
 import React from 'react';
 import { render } from 'react-dom';
-// import App from './layouts/App'
-
-const App = () => {
-    return <div> Hello, react.ts3 </div>
-}
+import App from '@layouts/App/index'
+import { BrowserRouter } from 'react-router-dom';
 
 render(
-      <App />,
+  <BrowserRouter>
+      <App />
+  </BrowserRouter>,
     document.querySelector('#app'),
   );
